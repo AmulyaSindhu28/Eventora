@@ -1,172 +1,142 @@
-\# Event Management Portal
+# Event Management Portal
 
+### A Full-Stack Web Application for Managing Events and Registrations
 
+![React](https://img.shields.io/badge/Frontend-React-61DAFB?logo=react&logoColor=black)
+![Spring
+Boot](https://img.shields.io/badge/Backend-Spring%20Boot-6DB33F?logo=springboot&logoColor=white)
+![Java](https://img.shields.io/badge/Language-Java-ED8B00?logo=openjdk&logoColor=white)
+![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?logo=mysql&logoColor=white)
 
-A full-stack web application that allows users to explore events, register for events, and enables organizers to manage events and registrations.
+------------------------------------------------------------------------
 
+## Overview
 
+Event Management Portal is a full-stack web application that allows
+users to explore events and register for them. Organizers can create,
+update, and manage events and view registrations.
 
-\## Tech Stack
+The frontend is built with React, the backend uses Java and Spring Boot,
+and MySQL is used for data storage.
 
+## Technology Stack
 
+**Frontend** - React.js - JavaScript - HTML5 - CSS3 - Vite
 
-\*\*Frontend\*\*
+**Backend** - Java - Spring Boot - Spring Web - Spring Data JPA -
+Hibernate
 
-\- React.js
+**Security** - Spring Security - JWT Authentication
 
-\- JavaScript
+**Database** - MySQL
 
-\- HTML5
+**Tools** - Eclipse - VS Code - Postman - Git and GitHub
 
-\- CSS3
+## Features
 
-\- Vite
+### User Features
 
+- User registration and login
+- Browse and view available events
+- View event details
+- Register for events
 
+### Organizer Features
 
-\*\*Backend\*\*
+- Create and manage events
+- Update event details
+- View event registrations
+- Manage registrations
 
-\- Java
+### Application Features
 
-\- Spring Boot
+- REST API integration between React and Spring Boot
+- JWT-based authentication
+- Role-based access for users and organizers
+- MySQL database integration
 
-\- Spring Data JPA
+## Project Structure
 
-\- Spring Security
-
-\- JWT Authentication
-
-
-
-\*\*Database\*\*
-
-\- MySQL
-
-
-
-\## Features
-
-
-
-\- User registration and login
-
-\- JWT-based authentication
-
-\- Browse and view available events
-
-\- Event creation and management
-
-\- Event registration
-
-\- Manage event registrations
-
-\- Role-based access for users and organizers
-
-\- REST API integration between frontend and backend
-
-
-
-\## Project Structure
-
-
-
-```text
-
+``` text
 EventManagementPortal/
-
 ├── backend/
-
 │   ├── src/
-
-│   └── pom.xml
-
+│   ├── pom.xml
+│   └── mvnw
 ├── frontend/
-
+│   ├── public/
 │   ├── src/
-
-│   └── package.json
-
+│   ├── package.json
+│   └── vite.config.js
 ├── .gitignore
-
 └── README.md
-
 ```
 
+## Getting Started
 
+### Prerequisites
 
-\## Running the Project Locally
+- Java JDK
+- Maven (or use the included Maven Wrapper)
+- Node.js and npm
+- MySQL
 
+### 1. Clone the Repository
 
+``` bash
+git clone https://github.com/AmulyaSindhu28/Eventora.git
+cd Eventora
+```
 
-\### Backend Setup
+### 2. Set Up the Database
 
+Start MySQL and create the database:
 
+``` sql
+CREATE DATABASE event_management;
+```
 
-1\. Open the backend folder in Eclipse.
+Configure these environment variables for the backend: - `DB_USERNAME` -
+`DB_PASSWORD` - `JWT_SECRET`
 
-2\. Configure your MySQL database and environment variables.
+### 3. Run the Backend
 
-3\. Create the `event\_management` database.
+Open a terminal in the backend folder:
 
-4\. Run the Spring Boot application.
+``` powershell
+cd backend
+.\mvnw.cmd spring-boot:run
+```
 
+The backend runs at `http://localhost:9090`.
 
+### 4. Run the Frontend
 
-Backend runs at: `http://localhost:9090`
+Open another terminal in the frontend folder:
 
-
-
-\### Frontend Setup
-
-
-
-1\. Open the frontend folder in VS Code.
-
-2\. Install dependencies:
-
-
-
-```bash
-
+``` bash
+cd frontend
 npm install
-
-```
-
-
-
-3\. Start the development server:
-
-
-
-```bash
-
 npm run dev
-
 ```
 
+Open the local URL shown in the terminal.
 
+## Configuration
 
-\## Database Configuration
+The backend reads database credentials and the JWT signing secret from
+environment variables. Do not commit actual passwords, tokens, or secret
+keys to the repository.
 
+The MySQL database `event_management` should be available before
+starting the backend.
 
+## Author
 
-Configure the following environment variables before running the backend:
+**Amulya Sindhu Bejjanki**
 
+GitHub: [AmulyaSindhu28](https://github.com/AmulyaSindhu28)
 
+------------------------------------------------------------------------
 
-\- `DB\_USERNAME`
-
-\- `DB\_PASSWORD`
-
-\- `JWT\_SECRET`
-
-
-
-\## Author
-
-
-
-Developed as a full-stack development project using React, Spring Boot and MySQL.
-
-
-
+*Built with React, Spring Boot and MySQL.*
