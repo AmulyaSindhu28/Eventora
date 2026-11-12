@@ -1,4 +1,4 @@
-# Event Management Portal
+# Eventora
 
 ### A Full-Stack Web Application for Managing Events and Registrations
 
@@ -12,7 +12,7 @@ Boot](https://img.shields.io/badge/Backend-Spring%20Boot-6DB33F?logo=springboot&
 
 ## Overview
 
-Event Management Portal is a full-stack web application that allows
+Eventora is a full-stack web application that allows
 users to explore events and register for them. Organizers can create,
 update, and manage events and view registrations.
 
